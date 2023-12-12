@@ -20,6 +20,8 @@ namespace Page_Navigation_App_MVVM.Utilities
 
         // Método que dispara el evento PropertyChanged. Se llama en los setters de las propiedades del ViewModel.
         public void onPropertyChanged([CallerMemberName] string propName = null)
+
+            //Test
         {
             // ?. es el operador de acceso condicional. Solo invoca el método si PropertyChanged no es null.
             // Esto evita excepciones si no hay suscriptores al evento.

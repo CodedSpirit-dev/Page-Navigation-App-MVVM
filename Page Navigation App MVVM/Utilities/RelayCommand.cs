@@ -24,14 +24,8 @@ namespace Page_Navigation_App_MVVM.Utilities
             _canExecute = canExecute;
         }
 
-        public bool CanExecute(object? parameter)
-        {
-            throw new NotImplementedException();
-        }
+        public bool CanExecute(object parameter) => _canExecute == null || _canExecute(parameter);
 
-        public void Execute(object? parameter)
-        {
-            throw new NotImplementedException();
-        }
+        public void Execute(object parameter) => _execute(parameter);
     }
 }
